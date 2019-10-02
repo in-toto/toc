@@ -13,7 +13,7 @@ healthy growth and progress.
 
   * Full artifact rule spec compliance ([1](https://github.com/in-toto/in-toto/pull/269), [2](https://github.com/in-toto/in-toto/pull/280))
   * Enhanced OpenPGP key export and key expiration verification ([1](https://github.com/in-toto/in-toto/pull/266), [2](https://github.com/in-toto/in-toto/pull/288))
-  * Transitive PyNaCl dependency is now optional ([1](https://github.com/in-toto/in-toto/pull/296))
+  * Transitive PyNaCl dependency is now optional ([1](https://github.com/in-toto/in-toto/pull/291))
   * Improved automatic test coverage analysis ([1](https://github.com/in-toto/in-toto/pull/295))
   * Static analysis improvements ([1](https://github.com/in-toto/in-toto/pull/279), [2](https://github.com/in-toto/in-toto/pull/296))
   * Improve upstream release packaging for Debian and Arch Linux ([1](https://github.com/in-toto/in-toto/pull/279), [2](https://github.com/in-toto/in-toto/pull/290))
