@@ -19,7 +19,7 @@ healthy growth and progress.
   * Improve upstream release packaging for Debian and Arch Linux ([1](https://github.com/in-toto/in-toto/pull/279), [2](https://github.com/in-toto/in-toto/pull/290))
 
 More changes and small improvements are mentioned in the current release
-changelog. 
+changelog.
 
 Beyond the current release other improvements to the broader reference
 implementation have been achieved.
@@ -84,7 +84,7 @@ design and specification include:
   code.
 * [Security assessment](https://github.com/cncf/sig-security/blob/master/assessments/projects/in-toto/self-assessment.md) by CNCF's SIG-SECURITY
 * A peer-reviewed paper describing the threat model, it's
-  security properties, was published in 
+  security properties, was published in
   [USENIX Security '19](https://www.usenix.org/conference/usenixsecurity19/presentation/torres-arias)
 * in-toto's implementation has received the [CII Silver Criteria Badge](https://bestpractices.coreinfrastructure.org/en/projects/1523)
   for best development practices.
