@@ -78,15 +78,15 @@ designed and tested with security in mind. Some of the actions performed in
 order to ensure the quality and security of the codebase, as well as in-toto's
 design and specification include:
 
-* Static analysis is performed using [pylint](FIXME) and [bandit](FIXME)
-* Dependency vulnerability tracking using [UpdateBot](FIXME)
+* Static analysis is performed using [pylint](https://github.com/PyCQA/pylint/) and [bandit](https://bandit.readthedocs.io/en/latest/)
+* Dependency vulnerability tracking using [Dependabot](https://dependabot.com/)
 * Manual code analysis / review by a Maintainer for each included piece of
   code.
-* [Security assessment](FIXME) by CNCF's SIG-SECURITY
+* [Security assessment](https://github.com/cncf/sig-security/blob/master/assessments/projects/in-toto/self-assessment.md) by CNCF's SIG-SECURITY
 * A peer-reviewed paper describing the threat model, it's
   security properties, was published in 
   [USENIX Security '19](https://www.usenix.org/conference/usenixsecurity19/presentation/torres-arias)
-* in-toto's implementation has received the [CII Silver Criteria Badge](FIXME)
+* in-toto's implementation has received the [CII Silver Criteria Badge](https://bestpractices.coreinfrastructure.org/en/projects/1523)
   for best development practices.
 
 A more elaborated description of these security initiatives, as well as a
