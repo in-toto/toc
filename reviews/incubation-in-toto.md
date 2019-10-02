@@ -1,10 +1,10 @@
 # in-toto Incubating Stage Review
 
-in-toto is currently a CNCF sandbox project. Please refer to Harbor's initial
+in-toto is currently a CNCF sandbox project. Please refer to in-toto's initial
 [sandbox proposal](../proposals/in-toto.adoc) for discussion on in-toto's
 alignment with the CNCF and details on sandbox requirements.
 
-In the time since being accepted as a sandbox project, Harbor has demonstrated
+In the time since being accepted as a sandbox project, in-toto has demonstrated
 healthy growth and progress.
 
 * [v0.4.0 is the latest release](https://github.com/in-toto/in-toto/releases),
