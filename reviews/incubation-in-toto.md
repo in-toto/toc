@@ -27,7 +27,7 @@ implementation have been achieved.
 FIXME:
 * A [formalized governance
 policy](https://github.com/in-toto/docs/blob/master/GOVERNANCE.md) has been
-instituted project-wide. This incldues not only the in-toto python reference
+instituted project-wide. This includes not only the in-toto python reference
 implementation, but the specifications, implementations in other languages and
 cloud-native tooling.
 
@@ -37,7 +37,7 @@ In addition to sandbox requirements, a project must meet the following
 criteria to become an incubation-stage project:
 
 * Document that it is being used successfully in production by at least three
-independent end users which, in the TOC’s judgement, are of adequate quality
+independent end users which, in the TOC’s judgment, are of adequate quality
 and scope.
 
   * We document adopters on the
@@ -48,7 +48,7 @@ and scope.
 the commit bit; i.e., someone who can accept contributions to some or all of
 the project.
 
-  * Maintainers of the project are listed in our [MAINTAINERS.txt](https://github.com/in-toto/in-toto/blob/develop/MAINTAINERS.txt) file. There are currently 3 core maintainters plus X more maintainers from companies such as (Debian, Datadog, and VMWare)
+  * Maintainers of the project are listed in our [MAINTAINERS.txt](https://github.com/in-toto/in-toto/blob/develop/MAINTAINERS.txt) file. There are currently 3 core maintainers plus X more maintainers from companies such as (Debian, Datadog, and VMWare)
 
   * Maintainers are added and removed from the project as per the policies
 outlined in the project [GOVERNANCE.md](https://github.com/in-toto/docs/blob/master/GOVERNANCE.md) file.
@@ -82,12 +82,12 @@ design and specification include:
 * Dependency vulnerability tracking using [UpdateBot](FIXME)
 * Manual code analysis / review by a Maintainer for each included piece of
   code.
-* [Security assesment](FIXME) by CNCF's SIG-SECURITY
+* [Security assessment](FIXME) by CNCF's SIG-SECURITY
 * A peer-reviewed paper describing the threat model, it's
   security properties, was published in 
   [USENIX Security '19](https://www.usenix.org/conference/usenixsecurity19/presentation/torres-arias)
 * in-toto's implementation has received the [CII Silver Criteria Badge](FIXME)
   for best development practices.
 
-A more elaborated descritption of these security initiatives, as well as a
+A more elaborated description of these security initiatives, as well as a
 vulnerability report process is included in the [SECURITY.md](https://github.com/in-toto/in-toto/blob/develop/SECURITY.md) file.
