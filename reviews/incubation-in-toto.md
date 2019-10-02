@@ -57,7 +57,7 @@ outlined in the project [GOVERNANCE.md](https://github.com/in-toto/docs/blob/mas
 
   * Releases: There was one [release](https://github.com/in-toto/in-toto/releases) scheduled since the sandbox application as defined on our [release schedule](https://github.com/in-toto/in-toto/blob/develop/ROADMAP.md)
 
-  * Roadmap: our [ROADMAP.md](https://github.com/in-toto/in-toto/blob/develop/ROADMAP.md) file describes our yearly roadmap. Since, we have had one roadmap [review](https://github.com/in-toto/in-toto/blob/develop/roadmap-reviews/2019/01-roadmap-review.md)
+  * Roadmap: our [ROADMAP.md](https://github.com/in-toto/in-toto/blob/develop/ROADMAP.md) file describes our yearly roadmap. Since, we have had one roadmap [review](https://github.com/in-toto/in-toto/blob/develop/roadmap-reviews/2020/review_1_august_19.md)
 
   * Contributors: [https://github.com/in-toto/in-toto/graphs/contributors](https://github.com/in-toto/in-toto/graphs/contributors)
 
