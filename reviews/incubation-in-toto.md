@@ -92,7 +92,7 @@ Beyond the current release other improvements to the broader reference
 implementation have been achieved.
 
 * A [formalized governance
-policy](https://github.com/in-toto/in-toto/blob/master/GOVERNANCE.md) has been
+policy](https://github.com/in-toto/in-toto/blob/develop/GOVERNANCE.md) has been
 instituted project-wide. This includes not only the in-toto python reference
 implementation, but the specifications, implementations in other languages and
 cloud-native tooling.
@@ -102,28 +102,67 @@ cloud-native tooling.
 In addition to sandbox requirements, a project must meet the following
 criteria to become an incubation-stage project:
 
-* Document that it is being used successfully in production by at least three
-independent end users which, in the TOC’s judgment, are of adequate quality
-and scope.
+### Document that it is being used successfully in production by at least three independent end users which, in the TOC’s judgment, are of adequate quality and scope
 
   * We document adopters on
     [our website](https://in-toto.io/integrations.html).
+  * The in-toto specification has inspired
+    the development of [Argos Notary](https://www.argosnotary.com/docs/00_overview/10_overview)
+    by Rabobank.
+  * Boxboat is currently [integrating](https://github.com/boxboat/in-toto-golang)
+    SPIFFE, a CNCF project, with in-toto. This will be presented at
+    [Cloud Native Security Day 2021](https://cnsecuritydayeu21.sched.com/event/iRn2).
+  * in-toto is also used by Cloud Native Application Bundles (CNAB), another
+    CNCF project, in [Signy](https://github.com/cnabio/signy).
 
-* Have a healthy number of committers. A committer is defined as someone with
-the commit bit; i.e., someone who can accept contributions to some or all of
-the project.
+### Have a healthy number of committers. A committer is defined as someone with the commit bit; i.e., someone who can accept contributions to some or all of the project
 
-  * Maintainers of the project are listed in our [MAINTAINERS.txt](https://github.com/in-toto/in-toto/blob/develop/MAINTAINERS.txt) file. There are currently 3 core maintainers plus 7 more maintainers from companies such as (Debian, Datadog, and VMWare)
+  * Maintainers of the project are listed in our
+    [MAINTAINERS.txt](https://github.com/in-toto/in-toto/blob/develop/MAINTAINERS.txt)
+    file. There are currently five core maintainers from Purdue University, New
+    York University, and Conda who cut releases.
+
+  * Several other people have commit access, but cannot craft releases. They are:
+    * Holger Levsen (Debian)
+    * Ofek Lev (Datadog)
+
+  * We have had contributions from people associated with different organizations.
+    Some of them, listed in no particular order:
+    * Trishank Karthik Kuppusamy (Datadog)
+    * Joshua Lock (VMWare)
+    * Dan Lorenc (Google)
+    * Christian Rebischke (Arch Linux)
 
   * Maintainers are added and removed from the project as per the policies
-outlined in the project [GOVERNANCE.md](https://github.com/in-toto/in-toto/blob/master/GOVERNANCE.md) file.
+    outlined in the project [GOVERNANCE.md](https://github.com/in-toto/in-toto/blob/develop/GOVERNANCE.md)
+    file.
 
-* Demonstrate a substantial ongoing flow of commits and merged contributions.
+  * Finally, in-toto participated in Google Summer of Code (GSOC) 2020 through the CNCF.
+    We have received proposals for GSOC 2021 which we are currently evaluating.
 
-  * Releases: There were three [releases](https://github.com/in-toto/in-toto/releases) scheduled since the sandbox application as defined on our [release schedule](https://github.com/in-toto/in-toto/blob/develop/ROADMAP.md)
+### Demonstrate a substantial ongoing flow of commits and merged contributions
 
-  * Roadmap: our [ROADMAP.md](https://github.com/in-toto/in-toto/blob/develop/ROADMAP.md) file describes our yearly roadmap. Since, we have had two roadmap reviews: [first](https://github.com/in-toto/in-toto/blob/develop/roadmap-reviews/2020/review_1_august_19.md) [second](https://github.com/in-toto/in-toto/blob/develop/roadmap-reviews/2020/review_2_december_19.md)
+  * Releases: There were six [releases](https://github.com/in-toto/in-toto/releases)
+    scheduled since the sandbox application as defined on our
+    [release schedule](https://github.com/in-toto/in-toto/blob/develop/ROADMAP.md).
 
+  * Roadmap: We have annual roadmaps for
+    [the reference implementation](https://github.com/in-toto/in-toto/blob/develop/ROADMAP.md)
+    and [in-toto as a whole](https://github.com/in-toto/docs/blob/master/ROADMAP.md).
+    Reviews are released at the end of each evaluation period described in the
+    roadmap, and they can be found in the repositories for the
+    [reference implementation](https://github.com/in-toto/in-toto/tree/develop/roadmap-reviews)
+    and [in-toto docs](https://github.com/in-toto/docs/tree/master/roadmap-reviews).
+
+  * in-toto Enhancements (ITEs): We have a [formal process](https://github.com/in-toto/ITE)
+    for interested parties to submit new features or describe some aspect or
+    integration of the in-toto specification. Since in-toto was accepted into
+    the CNCF sandbox, the following ITEs have been proposed:
+    * [ITE-2](https://github.com/in-toto/ITE/blob/master/ITE/2/README.adoc) by Trishank Karthik Kuppusamy (Datadog), "Draft"
+    * [ITE-3](https://github.com/in-toto/ITE/blob/master/ITE/3/README.adoc) by Trishank Karthik Kuppusamy (Datadog), "Draft"
+    * [ITE-4](https://github.com/in-toto/ITE/blob/master/ITE/4/README.adoc) by Santiago Torres-Arias (Purdue University), "Accepted"
+    * [ITE-5](https://github.com/in-toto/ITE/blob/master/ITE/5/README.adoc) by Santiago Torres-Arias (Purdue University), "Draft"
+    * [ITE-6](https://github.com/in-toto/ITE/pull/15) by Mark Lodato (Google), discussions ongoing
 
   * Contributors: [https://github.com/in-toto/in-toto/graphs/contributors](https://github.com/in-toto/in-toto/graphs/contributors)
 
