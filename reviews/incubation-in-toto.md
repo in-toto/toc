@@ -5,9 +5,59 @@ in-toto is currently a CNCF sandbox project. Please refer to in-toto's initial
 alignment with the CNCF and details on sandbox requirements.
 
 In the time since being accepted as a sandbox project, in-toto has demonstrated
-healthy growth and progress.
+healthy growth and progress. The [Python reference implementation](https://github.com/in-toto/in-toto) has had several releases.
 
-* [v0.4.2 is the latest patch release](https://github.com/in-toto/in-toto/releases),
+* [v1.0.1 is the latest patch release](https://github.com/in-toto/in-toto/releases),
+  shipped on March 1st, 2021. This was the final in-toto release that supported Python
+  2.7. This release added:
+    * Python 3.9 in the CI test matrix ([#419](https://github.com/in-toto/in-toto/pull/419))
+    * Logo and other visual enhancements on readthedocs ([#420](https://github.com/in-toto/in-toto/pull/420), [#428](https://github.com/in-toto/in-toto/pull/428))
+    * Review of first evaluation period for 2021 roadmap ([#421](https://github.com/in-toto/in-toto/pull/421))
+
+  The changes include:
+    * Switch to GitHub Actions for CI ([#432](https://github.com/in-toto/in-toto/pull/432))
+    * Switch to only running bandit on Python versions greater than 3.5 ([#416](https://github.com/in-toto/in-toto/pull/416))
+    * Debian downstream release metadata ([#418](https://github.com/in-toto/in-toto/pull/418))
+    * Bump tested dependencies: cffi ([#415](https://github.com/in-toto/in-toto/pull/415), [#427](https://github.com/in-toto/in-toto/pull/427)), cryptography ([#424](https://github.com/in-toto/in-toto/pull/424), [#429](https://github.com/in-toto/in-toto/pull/429)), securesystemslib ([#430](https://github.com/in-toto/in-toto/pull/430), [#431](https://github.com/in-toto/in-toto/pull/431)), iso8601 ([#423](https://github.com/in-toto/in-toto/pull/423))
+    * NOTE: the latest version of cryptography is no longer used on Python 2, as that is not supported.
+
+  This release removed:
+    * Dropped support for Python 3.5 ([#419](https://github.com/in-toto/in-toto/pull/419))
+
+* [v1.0.0 is the latest major release](https://github.com/in-toto/in-toto/releases),
+  shipped on November 23rd, 2020. This release added:
+    * '-P/--password' (prompt) cli argument for in-toto-run/in-toto-record ([#402](https://github.com/in-toto/in-toto/pull/402))
+    * in-toto-run link command timeout setting ([#367](https://github.com/in-toto/in-toto/pull/367))
+    * API and usage documentation for cryptographic key handling with securesystemslib ([#402](https://github.com/in-toto/in-toto/pull/402), [#408](https://github.com/in-toto/in-toto/pull/408))
+    * Artifact recording exclude pattern documentation ([#373](https://github.com/in-toto/in-toto/pull/373), [#405](https://github.com/in-toto/in-toto/pull/405))
+    * Test key generation mixin ([#402](https://github.com/in-toto/in-toto/pull/402))
+    * 2021 roadmap document ([#381](https://github.com/in-toto/in-toto/pull/381))
+
+  The changes include:
+    * Move 'settings' docs to new 'configuration' section and make minor enhancements in structure and content ([#405](https://github.com/in-toto/in-toto/pull/405))
+    * Update tested dependencies ([#377](https://github.com/in-toto/in-toto/pull/377), [#383](https://github.com/in-toto/in-toto/pull/383), [#384](https://github.com/in-toto/in-toto/pull/384), [#386](https://github.com/in-toto/in-toto/pull/386), [#389](https://github.com/in-toto/in-toto/pull/389), [#390](https://github.com/in-toto/in-toto/pull/390), [#394](https://github.com/in-toto/in-toto/pull/394), [#397](https://github.com/in-toto/in-toto/pull/397), [#398](https://github.com/in-toto/in-toto/pull/398), [#400](https://github.com/in-toto/in-toto/pull/400), [#404](https://github.com/in-toto/in-toto/pull/404), [#406](https://github.com/in-toto/in-toto/pull/406), [#409](https://github.com/in-toto/in-toto/pull/409), [#410](https://github.com/in-toto/in-toto/pull/410), [#411](https://github.com/in-toto/in-toto/pull/411))
+    * Debian downstream release metadata ([#382](https://github.com/in-toto/in-toto/pull/382))
+
+  This release removed:
+    * 'util' crypto module in favor of securesystemslib key interfaces ([#402](https://github.com/in-toto/in-toto/pull/402))
+    * Obsolete coveralls.io API call in Travis test builds ([#399](https://github.com/in-toto/in-toto/pull/399))
+
+  And it fixed:
+    * Minor docs issues ([#396](https://github.com/in-toto/in-toto/pull/396), [#385](https://github.com/in-toto/in-toto/pull/385), [#395](https://github.com/in-toto/in-toto/pull/395))
+    * pylint 2.6.0 ([#387](https://github.com/in-toto/in-toto/pull/387)) and lgtm.com ([#379](https://github.com/in-toto/in-toto/pull/379)) warnings
+
+* [v0.5.0](https://github.com/in-toto/in-toto/releases),
+  shipped on July 13th, 2020. New features include:
+    * Docs: Major CLI and API documentation overhaul and release ([#341](https://github.com/in-toto/in-toto/pull/341), [#369](https://github.com/in-toto/in-toto/pull/369))
+    * Bugfix: Use kwargs in in-toto-run to fix lstrip-paths bug ([#340](https://github.com/in-toto/in-toto/pull/340))
+    * Feature: Add option to specify target directory for generated metadata ([#364](https://github.com/in-toto/in-toto/pull/364))
+    * Tests: Add Python 3.8 to tested versions ([#339](https://github.com/in-toto/in-toto/pull/339))
+    * Tests: Add tmp dir and gpg key test mixins ([#345](https://github.com/in-toto/in-toto/pull/345))
+    * Tests: Use constant from securesystemslib to detect GPG in tests ([#352](https://github.com/in-toto/in-toto/pull/352))
+    * Tests: Enhance test suite feedback on Windows ([#368](https://github.com/in-toto/in-toto/pull/368))
+    * Dependencies: Misc updates ([#342](https://github.com/in-toto/in-toto/pull/342), [#346](https://github.com/in-toto/in-toto/pull/346), [#349](https://github.com/in-toto/in-toto/pull/349), [#350](https://github.com/in-toto/in-toto/pull/350), [#353](https://github.com/in-toto/in-toto/pull/353), [#354](https://github.com/in-toto/in-toto/pull/354), [#356](https://github.com/in-toto/in-toto/pull/356), [#358](https://github.com/in-toto/in-toto/pull/358), [#359](https://github.com/in-toto/in-toto/pull/359), [#362](https://github.com/in-toto/in-toto/pull/362), [#363](https://github.com/in-toto/in-toto/pull/363), [#366](https://github.com/in-toto/in-toto/pull/366))
+
+* [v0.4.2](https://github.com/in-toto/in-toto/releases),
   shipped on January 7th, 2020. New features include:
     * Drop custom OpenPGP subpackage and subprocess module and instead use the ones provided by securesystemslib, which are based on the in-toto implementation and receive continued support from a larger community ([#325](https://github.com/in-toto/in-toto/pull/325))
     * Fix a race condition that caused tests to sporadically fail was already fixed in securesystemslib and is now also available to in-toto ([#282](https://github.com/in-toto/in-toto/pull/282), [secure-systems-lab/securesystemslib#186](https://github.com/secure-systems-lab/securesystemslib/pull/186))
@@ -22,7 +72,7 @@ healthy growth and progress.
     * Address linter warnings ([#308](https://github.com/in-toto/in-toto/pull/308))
     * Update downstream debian metadata ([#302](https://github.com/in-toto/in-toto/pull/302), [#305](https://github.com/in-toto/in-toto/pull/305), [#309](https://github.com/in-toto/in-toto/pull/309))
 
-* [v0.4.2 is the latest minor](https://github.com/in-toto/in-toto/releases),
+* [v0.4.0](https://github.com/in-toto/in-toto/releases),
   shipped on September 9th, 2019. New features include:
 
   * Full artifact rule spec compliance ([#269](https://github.com/in-toto/in-toto/pull/269), [#280](https://github.com/in-toto/in-toto/pull/280))
@@ -34,6 +84,9 @@ healthy growth and progress.
 
 More changes and small improvements are mentioned in the current release
 changelog.
+
+Further, the [Go implementation](https://github.com/in-toto/in-toto-golang) has had one
+pre-release, [v0.1.0](https://github.com/in-toto/in-toto-golang/releases).
 
 Beyond the current release other improvements to the broader reference
 implementation have been achieved.
