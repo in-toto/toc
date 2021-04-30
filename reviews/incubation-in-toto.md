@@ -7,7 +7,21 @@ alignment with the CNCF and details on sandbox requirements.
 In the time since being accepted as a sandbox project, in-toto has demonstrated
 healthy growth and progress. The [Python reference implementation](https://github.com/in-toto/in-toto) has had several releases.
 
-* [v1.0.1 is the latest patch release](https://github.com/in-toto/in-toto/releases),
+* [v1.1.0 is the latest minor release](https://github.com/in-toto/in-toto/releases),
+  shipped on April 30th, 2021. It added:
+    * SPDX License identifiers and copyright information ([#440](https://github.com/in-toto/in-toto/pull/440))
+    * Aditya Sirish (@adityasaky) as a maintainer ([#443](https://github.com/in-toto/in-toto/pull/443))
+
+  Other changes include:
+    * PyPI development status from `Beta` to `Production/Stable` ([#447](https://github.com/in-toto/in-toto/pull/447))
+    * Santiago Torres-Arias's (@SantiagoTorres) email to reflect Purdue affiliation ([#446](https://github.com/in-toto/in-toto/pull/446))
+    * Debian downstream release metadata ([#437](https://github.com/in-toto/in-toto/pull/437))
+    * Bump dependency: cryptography ([#442](https://github.com/in-toto/in-toto/pull/442))
+
+  Finally, this release removed:
+    * Support for Python 2.7 ([#438](https://github.com/in-toto/in-toto/pull/438))
+
+* [v1.0.1](https://github.com/in-toto/in-toto/releases),
   shipped on March 1st, 2021. This was the final in-toto release that supported Python
   2.7. This release added:
     * Python 3.9 in the CI test matrix ([#419](https://github.com/in-toto/in-toto/pull/419))
